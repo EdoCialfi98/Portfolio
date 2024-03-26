@@ -1,0 +1,569 @@
+@font-face{
+    font-family: 'Atkinson Hyperlegible';
+    font-weight: 400;
+    src: url(fonts/AtkinsonHyperlegible-Regular.ttf);
+}
+
+@keyframes slideInTop{
+   from {transform: translateY(2vh);}
+   to{transform: translateY(0);} 
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    box-sizing: border-box;
+}
+
+.Header{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    margin-bottom: 3vh;
+    z-index: 100;
+}
+
+.container{
+    display: flex;
+    max-width: 100vw;
+    width: 100%;
+    margin: 0 0 0 0;
+    justify-content: space-between;
+}
+
+#Navbar{
+    flex: 0 0 100%;
+    justify-content: space-between;
+}
+
+#menu{
+
+    margin: 2vh 3vw 2vh 3vw;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#menu li{
+    display: flex;
+}
+
+ul img{
+    display: flex;
+    flex: 0 0 10%;
+
+}
+
+#menu img{
+    width: 5vw;
+    height: auto;
+}
+
+#hamlink{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: sticky;
+    top:0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 98;
+    float: right ;
+}
+
+#hamlink a{
+    color: #fff;
+    padding: 2vw;
+    text-decoration: none;
+    font-family: 'Termina';
+    font-weight: 700;
+    font-size: 7vw;
+    position: relative;
+    top: 8vh;
+    display: grid;
+    grid-template-columns: 1;
+    text-align: center;
+    animation-name: slideInTop;
+    animation-duration: 1s;
+}
+
+#hamlink a:active{
+    animation-name: slideInTop;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-delay: 0.5s;
+}
+
+.intro{
+    height: 100vh;
+}
+
+.intro video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -30%);
+    color: #fff;
+    mix-blend-mode: difference;
+    text-align: center;
+    font-family: 'Termina';
+    font-weight: 700;
+}
+
+.intro2{
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 25px;
+}
+
+
+.intro2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro2 :hover{
+    opacity: 40%;
+}
+
+.cards h2{
+    font-family: 'Termina';
+    font-weight: 700; 
+    color: #fff;
+    margin: 0 0 0 3vw;
+}
+
+.cardsContainer1, .cardsContainer2, .cardsContainer3{
+    margin: 3vh 3vw 3vh 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100vw - 50px);
+    justify-content: center;
+}
+
+.over, .lowpoly, .airmax, .airforce, .natura, .tesi{
+    flex: 0 0 45%;
+    margin: 0 1vw 0 1vw;
+
+}
+
+.cardsContainer1 img, .cardsContainer2 img, .cardsContainer3 img{
+    width: 100%;
+    height: 100%;
+    max-width: 50vw;
+
+}
+
+.cardsContainer1 a, .cardsContainer2 a, .cardsContainer3 a{
+    display: block;
+}
+
+.otherwork{
+    margin: 3vh 6.5vw 3vh 6.5vw;
+    display: none;
+    max-width: calc(90vw - 50px);
+    align-self: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    padding: 10vh 0 10vh 0;
+
+}
+
+.otherwork h2{
+    text-align: center;
+    font-family: 'Termina';
+    font-weight: 700;
+    color: #fff;
+}
+
+.otherwork a{
+    text-decoration: none;
+    display: block;
+}
+
+
+.Header{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    margin-bottom: 3vh;
+    z-index: 100;
+}
+
+.Footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto 0 auto;
+    width: 100vw;
+    background: #000;
+    margin-top: 5vh;
+}
+
+.container4{
+    display: flex;
+    width: 100%;
+    max-width: 92vw;
+    margin: 0 auto 0 auto;
+    justify-content: space-between;
+    padding: 2vh 3vw 2vh 3vw;
+}
+
+#social{
+    flex: 0 0 30%;
+    justify-content: flex-start;
+    height: fit-content;
+}
+
+#socialmenu img{
+    width: 5vw;
+}
+
+#socialmenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+
+.email{
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.email li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Atkinson Hyperlegible';
+    font-weight: 400;
+    font-size: 3vw;
+}
+
+.email ul{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.email li a p{
+    margin: 0 0 0 0;
+}
+
+.emailoop{
+    height: 70vh;
+}
+
+.emailoop video{
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.emailoop a{
+    position: absolute;
+    display: inline;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -25%);
+    color: #fff;
+    mix-blend-mode: difference;
+    text-align: center;
+    font-family: 'Termina';
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.Footer2{
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto 0 auto;
+    width: 100vw;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.Header2{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    margin-bottom: 3vh;
+    z-index: 100;
+}
+
+.container5{
+    display: flex;
+    width: 100%;
+    max-width: 92vw;
+    margin: 0 auto 0 auto;
+    justify-content: space-between;
+    padding: 0 3vw 0 3vw;
+
+}
+
+.poster{
+    width: 100vw;
+}
+
+.poster img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoprogetto{
+    margin: 3vh 25vw 0 25vw;
+    width: 50vw;
+}
+
+.infoprogetto h2, .infoprogetto p{
+    color: #fff;
+    text-align: center;
+}
+
+.infoprogetto h2{
+    font-family: 'Termina';
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+.infoprogetto h3{
+    font-family: 'Termina';
+    font-weight: 700;
+    font-size: 2vw;
+    color: #fff;
+}
+
+.infoprogetto p{
+    font-family: 'Atkinson Hyperlegible';
+    font-weight: 400;
+
+}
+ .cardsContainer5, .cardsContainer6{
+    margin: 3vh 3vw 3vh 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100vw - 50px);
+    justify-content: center;
+}
+
+.cardsContainer5 img, .cardsContainer6 img{
+    max-width: 50vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poster2{
+    margin: 3vh 12vw 3vh 12vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75vw;
+    justify-content: center;
+
+}
+
+.poster2 img{
+    flex: 0 0 100%;
+    object-fit: cover;
+}
+
+.ref1, .ref2, .ref3{
+    flex: 0 0 30%;
+    margin: 0 0vw 0 1vw;
+}
+
+.ref1 img, .ref2 img, .ref3 img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardsContainer7, .cardsContainer8{
+    margin: 3vh 3vw 3vh 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    justify-content: center;
+
+}
+
+.cardsContainer8{
+    gap: 1vw;
+}
+
+.ref4, .ref5{
+    flex: 0 0 calc(46.5% - 1vw);
+    margin: 0 0 0 0;
+}
+
+.ref4 img, .ref5 img{
+    max-width: 50vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardsContainer9, .cardsContainer10{
+    margin: 3vh 3vw 1vh 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100vw - 50px);
+    justify-content: center;
+}
+
+.cardsContainer10{
+    margin-top: 0;
+}
+
+.cardsContainer9 img, .cardsContainer10 img{
+    max-width: 50vw;
+    width: 100%;
+    height: 100%;
+}
+
+.poster video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.titles{
+    width: 100vw;
+    padding: 0 0 0 3vw;
+    display: flex;
+}
+
+ .titles h2{
+    font-family: 'Termina';
+    font-weight: 700;
+    width: 3vw;
+    color: #fff;
+    flex: 0 0 100%;
+ }
+
+ .processo{
+    margin: 3vh 3vw 1vh 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 94vw;
+    justify-content: center;
+ }
+
+ .processo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .processo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+ }
+
+ .about{
+    position: absolute;
+    width: 90vw;
+    height: 50vh;
+    padding: 12.5vh 5vw 12.5vh 5vw;
+ }
+
+ .about h2{
+    
+    font-family: 'Termina';
+    font-weight: 700;
+    font-size: 3vw;
+    color: #fff;
+    text-align: center;
+ }
+
+ .poster3{
+    margin: 3vh 12.5vw 3vh 12.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75vw;
+    justify-content: center;
+
+}
+
+.poster3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#zoom-out{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.zoom-out-content{
+    margin: auto;
+    display: block;
+    width: 75%;
+}
+
+.loop{
+    margin: 3vh 3vw 1vh 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 94vw;
+    justify-content: center;
+ }
+
+ .loop video{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+ }
+
+ .sperimentazione{
+    margin: 3vh 3vw 1vh 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 94vw;
+    justify-content: center;
+    border-radius: 10px;
+ }
+
+ .sperimentazione video, .sperimentazione img{
+    width: auto;
+    height: 94vh;
+    object-fit: cover;
+    border-radius: 10px;
+ }

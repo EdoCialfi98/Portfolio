@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stile.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/mvy5fuw.css">
+
+</head>
+
+<body>
+
+        <div class="Header">
+        <div class="container">
+            <div id="Navbar">
+                <ul id="menu">
+                    <div id="logo"><li>
+                        <a href="index.html"><img src="Immagini/LogoNegativo-02.png" alt="Logo"></a>
+                    </li>
+                </div>
+                <div class="hamburger">    
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <img src="Immagini/Hamburger.png" alt="">
+                        </a>
+                    </li>
+                </div>
+                </ul>
+               
+            </div>
+        </div>
+    </div> 
+    <div id="hamlink">
+                
+                            <a href="contacts.html">Contacts</a>
+                            <a href="about.html">About</a>
+                            <a href="playground.html">Playground</a>
+    </div>
+
+    <section class="infoprogetto">
+        <h2>Playground</h2>
+        <p>Some experimentation I do in my free time.
+        </p>
+        
+    </section>
+
+    <div class="titles">
+        <h2>3d Animation</h2>
+    </div>
+
+    <div class="sperimentazione">
+        <video controls muted loop>
+            <source src="SimulazioneCorde.mp4">
+        </video>
+    </div>
+
+    <div class="titles">
+        <h2>3d Visuals</h2>
+    </div>
+
+    <div class="sperimentazione">
+        <img src="Immagini/Sperimentazione1.png" alt="Sperimentazione1">
+    </div>
+
+<div class="Footer">
+        <div class="container4">
+            <div id="social">
+                <ul id="socialmenu">
+                <li>
+                        <a href="https://www.instagram.com/edoardocialfi/"><img src="Immagini/Instagram.png" alt="Instagram Logo"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/edoardo-cialfi-37a789297/"><img src="Immagini/LinkedIn.png" alt="LinkedIn Logo"></a>
+                    </li>
+                 </ul>    
+        </div>                 
+    <div class="email">
+        <ul>
+            <li>
+                <a href="mailto: edoardocialfi@gmail.com">
+                       <p>edoardocialfi98@gmail.com</p>
+                </a> 
+        </li>
+        </ul>
+        
+    </div>
+</div>
+<script>
+    function myFunction(){
+        var x = document.getElementById("hamlink");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
